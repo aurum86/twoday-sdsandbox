@@ -194,7 +194,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Pandemic Edition
+  m_Text: UAB Twoday Edition
 --- !u!222 &51810841
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -859,7 +859,7 @@ LightingSettings:
   m_AlbedoBoost: 1
   m_IndirectOutputScale: 1
   m_UsingShadowmask: 1
-  m_BakeBackend: 2
+  m_BakeBackend: 1
   m_LightmapMaxSize: 1024
   m_BakeResolution: 40
   m_Padding: 2
@@ -1570,8 +1570,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1787907216}
   m_HandleRect: {fileID: 1787907214}
   m_Direction: 0
-  m_Value: 0.0006019048
-  m_Size: 0.71271825
+  m_Value: 0.0006053211
+  m_Size: 0.712709
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
