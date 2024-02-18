@@ -6,7 +6,7 @@ public class Timer : MonoBehaviour
 {
     public TextMesh currentTotTimeDisp;
     public TextMesh penaltiesDisp;
-    public bool enabled_timer = false;
+    public bool enabled_timer = true;
     public string racerName;
     public float penalties = 0.0f; //seconds
     public float currentStart = 0.0f; //seconds
