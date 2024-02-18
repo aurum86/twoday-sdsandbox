@@ -154,6 +154,7 @@ namespace tk
             // add a function to be called when the button is clicked
             Button button = go.GetComponent<Button>();
             button.onClick.AddListener(delegate { LoadScene(scene_path); });
+            button.image.color = Color.black;
 
             // modify the text to match the scene_name
             GameObject text_go = go.transform.GetChild(0).gameObject;
@@ -168,6 +169,17 @@ namespace tk
                 RawImage raw_image = image_go.GetComponent<RawImage>();
                 raw_image.texture = texture;
 
+                RectTransform rectTransform = raw_image.rectTransform;
+
+                // Set anchorMin and anchorMax to cover the entire area of the parent Button
+                rectTransform.anchorMin = new Vector2(0f, 0f);
+                rectTransform.anchorMax = new Vector2(1f, 1f);
+
+                // Ensure pivot is centered
+                rectTransform.pivot = new Vector2(0.5f, 0.5f);
+
+                // Set sizeDelta to zero to stretch with anchors
+                rectTransform.sizeDelta = Vector2.zero;
             }
         }
     }
